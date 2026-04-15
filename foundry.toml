@@ -1,0 +1,19 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = "0.8.24"
+optimizer = true
+optimizer_runs = 200
+
+[profile.default.fuzz]
+runs = 1000
+# seed = 1  <-- УДАЛИ ИЛИ ЗАКОММЕНТИРУЙ ЭТУ СТРОКУ
+
+[profile.default.invariant]
+runs = 256
+depth = 15
+fail_on_revert = false
+
+[rpc_endpoints]
+mainnet = "${MAINNET_RPC_URL}"
