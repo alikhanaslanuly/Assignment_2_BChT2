@@ -87,7 +87,6 @@ contract ForkTest is Test {
         uint256 blockBefore = block.number;
         assertEq(blockBefore, FORK_BLOCK);
 
-        // Переключаемся на следующий блок
         vm.rollFork(FORK_BLOCK + 100);
         assertEq(block.number, FORK_BLOCK + 100);
 
