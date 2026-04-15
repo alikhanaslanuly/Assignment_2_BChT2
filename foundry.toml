@@ -8,7 +8,6 @@ optimizer_runs = 200
 
 [profile.default.fuzz]
 runs = 1000
-# seed = 1  <-- УДАЛИ ИЛИ ЗАКОММЕНТИРУЙ ЭТУ СТРОКУ
 
 [profile.default.invariant]
 runs = 256
